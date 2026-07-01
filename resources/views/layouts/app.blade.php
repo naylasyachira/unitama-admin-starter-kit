@@ -221,7 +221,7 @@
     <!-- add on -->
     <script src="{{ asset('niceadmin/vendor/jquery/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ asset('niceadmin/vendor/parsley/parsley.min.js') }}"></script>
-    <script src="{{ asset('niceadmin/vendor/sweetalert2/sweetalert2@11"') }}></script>
+    <script src="{{ asset('niceadmin/vendor/sweetalert2/sweetalert2@11') }}"></script>
     <script src="{{ asset('niceadmin/vendor/dataTables/js/dataTables.js') }}"></script>
     <script src="{{ asset('niceadmin/vendor/dataTables/js/dataTables.bootstrap5.js') }}"></script>
 
@@ -235,10 +235,7 @@
     <script src="{{ asset('niceadmin/js/main.js') }}"></script>
 
     <script>
-        new DataTable('#data-table', {
-            pageLength: 5,
-            lengthMenu: [5, 10, 25, 50, 100]
-        });
+        new DataTable('#data-table');
 
         $('.form').parsley({
             errorClass: 'is-invalid text-red',
